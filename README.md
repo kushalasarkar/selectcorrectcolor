@@ -1,4 +1,4 @@
-**https://practice-challenge-apps.vercel.app/selectcolorcorrect**
+**https://practice-challenge-apps.vercel.app/**
 
 If Selected option is correct then it will show green as an background else show red as an background
 
