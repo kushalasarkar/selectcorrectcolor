@@ -18,6 +18,9 @@ function App() {
       <button className='border-2 border-black rounded bg-blue-500 text-white m-2 p-2'>
         <Link to={`pagination`}>Pagination</Link>
       </button>
+      <button className='border-2 border-black rounded bg-blue-500 text-white m-2 p-2'>
+        <Link to={`Corousal`}>Corousal</Link>
+      </button>
     </div>
 
   )

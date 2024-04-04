@@ -6,6 +6,7 @@ import {RouterProvider,createBrowserRouter} from 'react-router-dom'
 import SelectColorCorrect from './SelectColorCorrect';
 import MemoryGame from './MemoryGame';
 import Pagination from './Pagination';
+import Corousal from './Corousal';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/pagination",
     element: <Pagination/>,
+  },
+  {
+    path: "/corousal",
+    element: <Corousal/>,
   },
   
 ]);
