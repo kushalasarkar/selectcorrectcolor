@@ -2,10 +2,12 @@ import './App.css';
 import { useState } from 'react';
 import SelectColorCorrect from './SelectColorCorrect';
 import { Link, Outlet } from 'react-router-dom';
-
+import {Provider} from 'react-redux';
+import Store from "./utils/Store";
 
 function App() {
   return (
+    <Provider store={Store}>
     <div className='flex justify-center h-screen items-center '>
       
       <Outlet/>
@@ -21,8 +23,18 @@ function App() {
       <button className='border-2 border-black rounded bg-blue-500 text-white m-2 p-2'>
         <Link to={`Corousal`}>Corousal</Link>
       </button>
+      <button className='border-2 border-black rounded bg-blue-500 text-white m-2 p-2'>
+        <Link to={`Timer`}>Timer</Link>
+      </button>
+      <button className='border-2 border-black rounded bg-blue-500 text-white m-2 p-2'>
+        <Link to={`TodoApp`}>TodoApp</Link>
+      </button>
+      <button className='border-2 border-black rounded bg-blue-500 text-white m-2 p-2'>
+        <Link to={`AddSubmit`}>AddSubmit</Link>
+      </button>
     </div>
-
+    
+    </Provider>
   )
   // const [currColor, setCurrColor] = useState({});
   // const [Color1, setColor1] = useState("#000000");
